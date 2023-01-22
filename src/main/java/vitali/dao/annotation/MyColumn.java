@@ -7,12 +7,18 @@ import java.lang.annotation.Target;
 
 
 /**
- * Column name
- * @author Vitali
+ * Column name corresponding to vo class.
+ * @author Administrator
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface MyColumn {
+
+    /**
+     * Some description here.
+     * @return description.
+     */
     String name();
+
 }

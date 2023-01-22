@@ -7,12 +7,18 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Table name
- * @author Vitali
+ * Table name corresponding to vo class.
+ * @author Administrator
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface MyTable {
+
+    /**
+     * Some description here.
+     * @return description.
+     */
     String name();
+
 }
